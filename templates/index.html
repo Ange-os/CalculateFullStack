@@ -1,0 +1,96 @@
+{% extends 'base.html' %}
+{% block title %}Inicio/calculaT{% endblock %}
+{% block css %}<link rel="stylesheet" href="static/css/style.css">{% endblock %}
+{% block content %}
+<header class="luz animated bounceInDown">
+    <div class="container-tittle">
+        <img id="img-logo"  src="static/no-bg.png" class="img-logo" alt="logo-app-mobile">
+    </div>
+    <nav class="container-nav luz-nav">
+        <a href="/descarga" class="animated bounceInRight luz-detalles">Descargar</a>
+        <a href="/contacto" class="animated bounceInLeft luz-detalles">Contacto</a>
+        <div class="modo luz-detalles">
+            <i class="material-symbols-outlined" id="modoclaro">
+                dark_mode
+            </i>
+        </div>
+    </nav>        
+</header>        
+<section class="container-content">
+<div class="android ">
+    <img class="animated zoomIn" src="static/android.png" alt="android-app">
+</div>
+<div class="container-img-txt luz">
+    <div class="img-gif-der animated bounceInLeft">
+        <img src="static/gif_precentation.gif" class="img-celu" alt="img-celu">
+    </div>
+    <div class="text-bienvenida animated bounceInRight">
+        <div class="text">
+            <h1>Bienvenido a CalculaT</h1>
+            <p>¡Hola! Nos alegra que estés aquí. CalculaT es tu nueva herramienta esencial para calcular materiales en obras pequeñas y medianas. Diseñada especialmente para albañiles y contratistas de la construcción, nuestra aplicación te ayudará a planificar y gestionar tus proyectos de manera eficiente y precisa.</p>
+            <h4>Beneficios de usar nuestra herramienta</h4>
+            <ul>
+                <li>Precisión: Evita el desperdicio de materiales y optimiza tus recursos.</li>
+                <li>Eficiencia: Ahorra tiempo en la planificación y ejecución de tus proyectos.</li>
+                <li>Facilidad de uso: Nuestra interfaz intuitiva te permite realizar cálculos rápidamente y sin complicaciones.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container-img-txt luz">
+    <div class="text-precentation fade_text text_izq img-1">
+        <div class="text">
+            <h2>Cálculo de Materiales para Hormigonadas</h2>
+            <p>En CalculaT, te ofrecemos una herramienta precisa y fácil de usar para calcular los materiales necesarios en tus proyectos de construcción. Ya sea que estés trabajando en columnas, contrapisos, losas o cimientos, nuestra aplicación te ayudará a determinar la cantidad exacta de hormigón y hierro que necesitas.</p>
+            <h4>¿Qué puedes calcular con nuestra herramienta?</h4>
+            <ul>
+                <li>Columnas: Calcula la cantidad de hormigón y las varillas de hierro necesarias para construir columnas robustas y seguras.</li>
+                <li>Contrapisos: Obtén la cantidad exacta de hormigón para crear contrapisos nivelados y resistentes.</li>
+                <li>Losas: Determina los materiales necesarios para losas de diferentes tamaños y espesores</li>
+                <li>Cimientos: Asegura una base sólida calculando el hormigón y el refuerzo de hierro necesarios para tus cimientos.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="img-gif-izq">
+        <img src="static/gif-hormigon.gif" class="img_gif_estandar fade_left img-celu" alt="img-cel">
+    </div>
+</div>
+<div class="container-img-txt luz">
+    <div class="img-gif-der">
+        <img src="static/gif-ladrillos.gif" class="img_gif_estandar fade_right img-celu" alt="img-cel">
+    </div>
+    <div class="text-precentation fade_text text_der img-2">
+        <div class="text">
+            <h2>Cálculo de Ladrillos</h2>
+            <p>En CalculaT, te ofrecemos una herramienta completa para calcular la cantidad de ladrillos necesarios en tus proyectos de construcción. Nuestra aplicación soporta cuatro tipos de ladrillos, desde los comunes hasta los portantes, para que puedas elegir el que mejor se adapte a tus necesidades</p>    
+            <h4>Tipos de Ladrillos Disponibles</h4>
+            <ul>
+                <li>Ladrillos Comunes: Ideales para muros interiores y exteriores, estos ladrillos son versátiles y económicos.</li>
+                <li>Ladrillos Huecos: Perfectos para reducir el peso de la estructura sin comprometer la resistencia.</li>
+                <li>Ladrillos Macizos: Ofrecen una mayor resistencia y durabilidad, ideales para muros de carga.</li>
+                <li>Ladrillos Portantes: Diseñados para soportar cargas estructurales, estos ladrillos son esenciales para construcciones robustas.</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container-img-txt luz">
+    <div class="text-precentation fade_text text_izq img-3">
+        <div class="text">
+            <h2>Conversor de Pesos a Dólares</h2>
+            <p>En CalculaT, te ofrecemos una herramienta rápida y precisa para convertir pesos a dólares. Ya sea que necesites hacer una conversión para tus compras, viajes o simplemente para estar al tanto del tipo de cambio, nuestro conversor te proporciona la información que necesitas en tiempo real.</p>
+            <h4>¿Cómo usar nuestro conversor?</h4>
+            <ul>
+                <li>Selecciona las divisas: Elige “Pesos” como la moneda de origen y “Dólares” como la moneda de destino.</li>
+                <li>Introduce la cantidad: Escribe la cantidad de pesos que deseas convertir.</li>
+                <li>Obtén el resultado: Nuestro conversor te mostrará el valor equivalente en dólares al tipo de cambio actual.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="img-gif-izq">
+        <img src="static/gif-dolar.gif" class="img_gif_estandar fade_left img-celu" alt="img-cel">
+    </div>
+</div>        
+</section>
+{% endblock %}
+
+    

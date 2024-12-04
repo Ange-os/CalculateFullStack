@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% block title %}Contacto{% endblock %}
+{% block css %}<link rel="stylesheet" href="static/css/style-contacto.css">{% endblock %}
+{% block content %}
+<header class="luz animated bounceInDown">
+    <div class="container-tittle">
+        <img id="img-logo"  src="static/no-bg.png" class="img-logo" alt="logo-app-mobile">
+    </div>
+    <nav class="container-nav luz-nav">
+        <a href="/" class="animated bounceInLeft luz-detalles">Inicio</a>
+        <a href="/descarga" class="animated bounceInRight luz-detalles">Descargar</a>
+        <div class="modo luz-detalles">
+            <i class="material-symbols-outlined" id="modoclaro">
+                dark_mode
+            </i>
+        </div>
+    </nav>        
+</header>
+<div class="content">
+    <div class="android animated zoomIn">
+        <img src="static/android.png" alt="android-app">
+    </div>
+    <div class="android2 animated zoomIn">
+        <img src="static/android.png" alt="android-app">
+    </div>
+    <div class="text-precentation luz animated bounceInRight"> 
+            <h3>Contancto</h3>
+            <form class="animated bounceInLeft" id="form-contact" method="POST">
+                <label for="Name">Nombre</label>
+                <input id="Name" type="text" name="name" required="true">
+                <label for="Correo">Email</label>
+                <input id="Correo" type="Email" name="email" required="true">
+                <label for="Mensaje">Mensaje</label>
+                <textarea id="Mensaje" name="message" required="true"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}

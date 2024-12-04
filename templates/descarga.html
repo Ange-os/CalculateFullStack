@@ -1,0 +1,35 @@
+
+{% extends 'base.html' %}
+{% block tittle %}Descargar{% endblock %}
+{% block css %}<link rel="stylesheet" href="static/css/style-descargar.css">{% endblock %}
+{% block content %}
+<header class="luz animated bounceInDown">
+    <div class="container-tittle">
+        <img id="img-logo"  src="static/no-bg.png" class="img-logo" alt="logo-app-mobile">
+    </div>
+    <nav class="container-nav luz-nav">
+        <a href="/" class="animated bounceInRight luz-detalles">Inicio</a>
+        <a href="/contacto" class="animated bounceInLeft luz-detalles">Contacto</a>
+        <div class="modo luz-detalles">
+            <i class="material-symbols-outlined" id="modoclaro">
+                dark_mode
+            </i>
+        </div>
+    </nav>
+</header>        
+<div class="content">
+<div class="android animated zoomIn">
+    <img src="static/android.png" alt="android-app">
+</div>
+<div class="android2 animated zoomIn">
+    <img src="static/android.png" alt="android-app">
+</div>
+<div class="text-precentation luz animated bounceInLeft">
+    <div class="text animated bounceInRight">
+        <h2>¡Descarga nuestra app de cálculo¡</h2>
+        <p>¿Estás planeando un proyecto de construcción pequeño o mediano? Nuestra aplicación te facilita el cálculo preciso de los materiales necesarios. Ahorra tiempo y dinero con nuestra herramienta intuitiva y fácil de usar. ¡Descarga ahora el archivo APK y lleva tus proyectos al siguiente nivel!</p>
+        <a href="https://raw.githubusercontent.com/Ange-os/Calculate.Web/main/descarga/claculate.apk" download="Calculatec">[Descargar APK]</a>
+    </div>
+</div>
+</div>
+{% endblock %}
